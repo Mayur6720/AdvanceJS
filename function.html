@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    
+    <script>
+
+        function userdetails(name, age, caste){
+            this.name = name
+            this.age = age
+            this.caste = caste
+        }
+
+        let mayurdetails = new userdetails("Mayur", 23, "Hindu")
+        console.log(mayurdetails);
+    
+        let utsavdetails = new userdetails("Utsav", 24, "Hindu")
+        console.log(utsavdetails)
+    
+        function user(name , age , loction){  // It's a factory function fuction 
+            return "dash" + " " + 25 + " " + "surat"
+        }
+
+
+        let  user1 = (name , age , loction) => { //It's known as a arrow/labda function
+            return "dash" + 25 + "surat"
+        }
+
+        console.log(user());
+    </script>
+
+</body>
+</html>

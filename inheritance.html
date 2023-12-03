@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        class Animal {
+            shout() {
+                console.log(this.name + " this animal was shouting");
+            }
+            eat() {
+                console.log(this.name + "  was eating");
+            }
+            fill(givename) {
+                this.name = givename
+            }
+            
+        }
+
+        class Animal2 extends Animal {
+            run() {
+                console.log(" animal was running ");
+            }
+        }
+
+        // console.log(Animal);
+
+        let dog = new Animal()
+
+        console.log(dog);
+        dog.fill("tommy")
+        dog.eat()
+
+        let panda = new Animal2()
+        panda.fill("sher")
+        panda.run()
+        panda.eat()
+        // console.log();
+
+
+                // let cat = new Animal()
+                // fill(45)
+                // cat.eat()
+    </script>
+
+</body>
+
+</html>
